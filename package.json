@@ -1,0 +1,11 @@
+{
+  "name": "sample-proj",
+  "version": "1.0.0",
+  "main": "dom.js",
+  "repository": "git@github.com:missKatiaPunter/sample-proj.git",
+  "author": "Katia <katia@ada.ac.uk>",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
+}
