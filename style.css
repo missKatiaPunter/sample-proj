@@ -1,0 +1,22 @@
+body{
+    margin:0;
+    padding:0;
+    height: 100vh;
+    background-color: #371c68;
+    color: #fff;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-family: 'Arial', sans-serif;
+}
+
+/*box containing submit form*/
+
+.maincontainer{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+}
