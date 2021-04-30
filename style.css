@@ -1,8 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root {
+    --success-color: #2ecc71;
+    --error-color: #e74c3c;
+  }
+
 body{
     margin:0;
     padding:0;
     height: 100vh;
-    background-color: #371c68;
+    background-color: #bfabe2;
     color: #fff;
     display:flex;
     justify-content: center;
@@ -20,3 +27,91 @@ body{
     align-items: center;
     width: 65%;
 }
+
+.form {
+    padding: 1rem 2rem;
+}
+
+
+.form-field {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    position: relative;
+}
+
+.form-field label {
+    color: #777;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.form-field input {
+    border: 2px solid #f0f0f0;
+    border-radius: 0.1rem;
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    font-size: 16px;
+}
+
+.form-field {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    position: relative;
+}
+
+.form-field label {
+    color: #777;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.form-field small {
+    color: var(--error-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.form button {
+    cursor: pointer;
+    background-color: #03531e;
+    border: 2px solid #03531e;
+    border-radius: 0.2rem;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+input::placeholder {
+    color: #D3D3D3;
+}
+
+.form-field input:focus {
+    outline: 0;
+    border-color: #777;
+}
+
+.form-field.success input {
+    border-color: var(--success-color);
+}
+
+.form-field.error input {
+    border-color: var(--error-color);
+}
+
+.form-field small {
+    color: var(--error-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+  }
+  
+  .form-field.error small {
+    visibility: visible;
+  }
